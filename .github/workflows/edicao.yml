@@ -17,6 +17,10 @@ on:
         description: "Enviar mesmo se a edição de hoje já saiu"
         type: boolean
         default: false
+      reenviar:
+        description: "Reenviar uma edição arquivada, igualzinha (data AAAA-MM-DD)"
+        type: string
+        default: ""
 
 permissions:
   contents: write
@@ -37,11 +41,13 @@ jobs:
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          REENVIAR: ${{ inputs.reenviar }}
           PYTHONUNBUFFERED: "1"
         run: |
           args=""
           if [ "${{ github.event_name }}" = "schedule" ]; then args="--aguardar-ate 08:00"; fi
           if [ "${{ inputs.forcar }}" = "true" ]; then args="--forcar"; fi
+          if [ -n "$REENVIAR" ]; then args="--reenviar $REENVIAR"; fi
           python3 edicao.py $args
 
       - name: Guarda estado e edição no repositório

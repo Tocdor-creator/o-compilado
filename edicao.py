@@ -4,12 +4,15 @@
     python edicao.py --aguardar-ate 08:00   espera dar 8h antes de varrer (é o que o GitHub Actions usa)
     python edicao.py --previa saida.html    só gera o HTML: não envia e não mexe no estado
     python edicao.py --forcar               envia mesmo se a edição de hoje já saiu
+    python edicao.py --reenviar 2026-10-16  reenvia uma edição arquivada, igualzinha, sem mexer no estado
 """
 import argparse
 import os
+import re
 import sys
 import time
 from datetime import datetime, timedelta
+from html import unescape
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
@@ -32,12 +35,28 @@ def aguarda(hhmm):
         time.sleep(falta.total_seconds())
 
 
+def reenvia(dia):
+    """Rodar de novo não serve pra isso: os papers da edição já contam como enviados, então sairia outra."""
+    with open(os.path.join(PASTA_EDICOES, f"{dia}.html"), encoding="utf-8") as f:
+        html = f.read()
+    titulo = re.search(r"<title>(.*?)</title>", html, re.S)
+    assunto = unescape(titulo.group(1)) if titulo else f"O Compilado · {dia}"
+    texto = "Esta edição de O Compilado é em HTML. Abra num leitor de e-mail com HTML ativado."
+    destino = envio.envia(assunto, html, texto)
+    print(f"Edição de {dia} reenviada para {destino}.")
+    return 0
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--aguardar-ate", metavar="HH:MM")
     ap.add_argument("--previa", metavar="ARQUIVO.html")
     ap.add_argument("--forcar", action="store_true")
+    ap.add_argument("--reenviar", metavar="AAAA-MM-DD")
     args = ap.parse_args()
+
+    if args.reenviar:
+        return reenvia(args.reenviar)
 
     est = estado.carrega()
     hoje = agora().date()

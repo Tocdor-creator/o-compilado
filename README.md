@@ -53,6 +53,8 @@ Se as duas fontes estiverem fora do ar, o workflow falha e o GitHub avisa por e-
 
 4. Pra testar, vá em *Actions → Edição diária → Run workflow*. O e-mail chega em um ou dois minutos.
 
+Pra receber de novo uma edição que já saiu (trocou de e-mail, apagou sem querer), use o mesmo *Run workflow* e preencha **reenviar** com a data (`2026-10-16`). Ela sai idêntica à arquivada em `edicoes/`, sem contar como edição nova.
+
 Pra mandar por outro provedor, crie também `SMTP_HOST` e `SMTP_PORT` e passe os dois no `env` do workflow.
 
 ## Rodando no PC
