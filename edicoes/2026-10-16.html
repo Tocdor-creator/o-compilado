@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light"><title>O Compilado nº 1 · 16/10 — FDE-Gym: The Last Mile of AI Delivery</title>
+<style>@media (max-width:520px){.p{padding-left:18px!important;padding-right:18px!important}.nome{font-size:40px!important}.manchete{font-size:25px!important}}</style></head>
+<body style="margin:0;padding:0;background:#e9e2d3;">
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;">FDE-Gym evaluates AI agents on realistic customer delivery tasks requiring clarification of ambiguous requirements and discovery of unstated constraints, revealing a substantial performance gap compared to well-specified benchmarks.</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#e9e2d3;"><tr><td align="center" style="padding:24px 10px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:660px;background:#fbf8f1;border:1px solid #d6ccb8;">
+<tr><td class="p" style="padding:18px 32px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+    <td style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#625c53;">sexta-feira, 16 de outubro de 2026</td>
+    <td align="right" style="white-space:nowrap;padding-left:12px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#625c53;">Edição nº 1</td>
+  </tr></table>
+</td></tr>
+<tr><td class="p" align="center" style="padding:10px 32px 0;">
+  <div style="border-top:4px solid #1b1a17;"></div>
+  <h1 class="nome" style="margin:14px 0 2px;font-family:Georgia,'Times New Roman',Times,serif;font-size:52px;line-height:1;font-weight:bold;letter-spacing:-1px;color:#1b1a17;">O Compilado</h1>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;font-style:italic;color:#625c53;">Os papers de programação do dia, resumidos às 8h</p>
+  <div style="border-top:1px solid #1b1a17;padding-top:3px;"><div style="border-top:1px solid #1b1a17;"></div></div>
+  <p style="margin:8px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#625c53;">
+    20 papers nesta edição &nbsp;·&nbsp; 294 analisados &nbsp;·&nbsp; arXiv + Hugging Face</p>
+</td></tr>
+
+<tr><td class="p" style="padding:22px 32px 6px;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#9b1c1c;">Manchete — cs.AI · cs.CL · cs.SE — 227 votos no Hugging Face</p>
+  <h1 class="manchete" style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:30px;line-height:1.15;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.22350" style="color:#1b1a17;text-decoration:none;">FDE-Gym: The Last Mile of AI Delivery</a></h1>
+  <p style="margin:0 0 14px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Dongxu Yang, Hongda Yan, Renxin Wang, Baoli Zhang e mais 22 · DeepLethe</p>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:18px;line-height:1.45;font-style:italic;color:#1b1a17;">FDE-Gym evaluates AI agents on realistic customer delivery tasks requiring clarification of ambiguous requirements and discovery of unstated constraints, revealing a substantial performance gap compared to well-specified benchmarks.</p>
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.65;color:#1b1a17;"><span style="float:left;font-family:Georgia,'Times New Roman',Times,serif;font-size:54px;line-height:46px;padding:5px 8px 0 0;color:#1b1a17;font-weight:bold;">E</span>xisting agent benchmarks typically evaluate agents on well-specified tasks defined by issue reports, specifications, or task tickets. Real-world customer delivery is different: forward-deployed engineers (FDEs) must clarify ambiguous requirements, work in live systems, and uncover unstated constraints. We introduce FDE-Gym, a benchmark of 95 end-to-end delivery tasks from 20 customer scenarios across 18 sectors, each adapted by industry experts from real-world delivery projects. In simulated customer environments with scripted stakeholders and modifiable customer systems, agents interact with stakeholders and operate on production-like systems to deliver working solutions. FDE-Gym scores a delivery by how much it improves the customer&#x27;s own success metric, normalized between 0 (unchanged system) and 1 (reference solution), with penalties for stakeholder interactions (messages, trial runs, and waiting time). An online platform lets humans practice FDE skills under the same grading criteria. We evaluate 13 model configurations from seven providers. In the realistic setting, where unstated constraints must be discovered, the best configuration achieves a mean FDE-Gym score of 0.56 and resolves only 14 of the 95 tasks (a score of at least 0.8 with no incident). Discovering unstated constraints is the primary bottleneck: performance drops sharply when models must uncover them without explicit guidance. Yet information discovery alone does not account for the gap: even on the 23 tasks where the best configuration obtains every key fact from stakeholders, it reaches a normalized business uplift of 0.8 or above on only 10. These results reveal a substantial gap between solving well-specified tasks and delivering effective AI systems for real customers.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.22350" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.22350" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a> &nbsp;·&nbsp; <a href="https://github.com/deeplethe/fde-gym" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Código ★93</a> &nbsp;·&nbsp; <a href="https://huggingface.co/papers/2610.22350" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Discussão no HF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:26px 32px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+    <td style="border-top:3px solid #1b1a17;border-bottom:1px solid #1b1a17;padding:7px 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+      font-size:12px;font-weight:bold;letter-spacing:2.5px;text-transform:uppercase;color:#1b1a17;">Em alta na comunidade</td>
+  </tr></table>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;border-bottom:1px solid #d6ccb8;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">118 votos no Hugging Face</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.18860" style="color:#1b1a17;text-decoration:none;">AesCode: Aesthetic Code Generation with Decoupled Cross-Modal Rewards</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Xin Gao, Yifan Yang, Xin Li e mais 13 · Microsoft</p>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:16px;line-height:1.45;font-style:italic;color:#1b1a17;">AesCode improves code generation for visual artifacts by combining design graphs with cross-modal rewards guided by reference images, enhancing layout, aesthetics, and verifiable correctness.</p>
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">Generating information-rich visual artifacts such as slides, posters, and dashboards as code is appealing because the outputs are structured, editable, and verifiable. To evaluate this setting, we build a benchmark that scores verifiable correctness and visual quality separately, with visual scores highly consistent with human judgments. We find that reference images substantially improve the visual quality of code generated by existing models, and ablations show that AesCode benefits from references both as model input and as a source of visual rewards.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.18860" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.18860" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a> &nbsp;·&nbsp; <a href="https://github.com/microsoft/AesCode" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Código ★84</a> &nbsp;·&nbsp; <a href="https://huggingface.co/papers/2610.18860" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Discussão no HF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;border-bottom:1px solid #d6ccb8;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">100 votos no Hugging Face</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.20344" style="color:#1b1a17;text-decoration:none;">Doc2Harness: Benchmarking LLMs on Long-Horizon Harness Engineering of Coding Agents</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Yuyao Ge, Shenghua Liu, Peizhong Gao e mais 8 · Institute of Computing Technology</p>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:16px;line-height:1.45;font-style:italic;color:#1b1a17;">Doc2Harness is a deterministic two-stage benchmark that evaluates long-horizon harness engineering by having models build and run harnesses across isolated containers, revealing substantial performance gaps among frontier models.</p>
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">Agents driven by large language models are increasingly deployed on long-horizon tasks, where they use tools and modify real workspaces. We propose Doc2Harness, a two-stage benchmark that evaluates long-horizon harness engineering directly. Across nineteen frontier models, each evaluated with three independent builds on 328 test cases, GPT-6 Astra achieves the highest pass rate at 53.05%, while the weakest model reaches 27.44%, a gap of roughly twenty-six percentage points.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.20344" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.20344" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a> &nbsp;·&nbsp; <a href="https://github.com/YuyaoGe/doc2harness" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Código ★61</a> &nbsp;·&nbsp; <a href="https://huggingface.co/papers/2610.20344" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Discussão no HF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">97 votos no Hugging Face</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.22341" style="color:#1b1a17;text-decoration:none;">3DCodeVerse: Exploring 3D Worlds as Code</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Yipeng Gao, Ziyao Zeng, Jinfa Huang e mais 16 · University of Southern California</p>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:16px;line-height:1.45;font-style:italic;color:#1b1a17;">3DCodeVerse is a research ecosystem that provides datasets, automated verification harnesses, and empirical guidance to enable scalable, editable, and verifiable 3D content generation via executable code.</p>
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">We introduce 3DCodeVerse, a research ecosystem that enables coding agents to create editable and verifiable 3D content at scale. Notably, our 3DCodeVerse harness achieves a 90% win rate against Claude Design (3D Object) in pairwise human evaluations, when both are utilized by Claude Opus 5.5.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.22341" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.22341" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a> &nbsp;·&nbsp; <a href="https://github.com/gaoypeng/3dcodeverse" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Código ★40</a> &nbsp;·&nbsp; <a href="https://huggingface.co/papers/2610.22341" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Discussão no HF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:26px 32px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+    <td style="border-top:3px solid #1b1a17;border-bottom:1px solid #1b1a17;padding:7px 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+      font-size:12px;font-weight:bold;letter-spacing:2.5px;text-transform:uppercase;color:#1b1a17;">IA aplicada ao código</td>
+  </tr></table>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;border-bottom:1px solid #d6ccb8;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">cs.SE — 16 votos no Hugging Face</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.21359" style="color:#1b1a17;text-decoration:none;">SWE-at-Scale: Scalable Issue Synthesis from Historical Bug Fixes</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Silin Chen, Zihan Zhang, Xiaodong Gu e mais 7 · Shanghai Jiao Tong University</p>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:16px;line-height:1.45;font-style:italic;color:#1b1a17;">SWE-at-Scale synthesizes realistic software engineering tasks by inverting real-world fixes to generate diverse, executable bugs for evaluating coding agents.</p>
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">As coding agents become increasingly capable, robust evaluation requires a broader and more diverse supply of verifiable software engineering (SWE) tasks. To exponentially scale SWE task production, we introduce SWE-at-Scale, a framework that automatically synthesizes realistic issues by reverse-engineering real-world software fixes. Extensive experiments show that SWE-at-Scale generates more diverse and realistic SWE tasks than current synthesis baselines while posing greater challenges to state-of-the-art coding agents.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.21359" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.21359" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a> &nbsp;·&nbsp; <a href="https://github.com/cslsolow/SWE-at-scale" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Código ★3</a> &nbsp;·&nbsp; <a href="https://huggingface.co/papers/2610.21359" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Discussão no HF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;border-bottom:1px solid #d6ccb8;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">cs.SE · cs.AI</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.21914" style="color:#1b1a17;text-decoration:none;">CodeHealth Predicts the Token Cost of Agentic Code Review: A Pre-Registered Study of 465 Agent-Authored Pull Requests</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Lo Gullstrand Heander, Markus Borg, Emma S\&quot;oderberg e mais 1</p>
+  
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">Context: Organizations increasingly delegate code review to multi-agent large language model (LLM) pipelines billed per token. Results: For all three LLMs the CodeHealth coefficient was negative, with 95% CI excluding zero; each CodeHealth point was associated with 3.5% to 6.1% lower token cost.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.21914" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.21914" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">cs.SE</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.21073" style="color:#1b1a17;text-decoration:none;">Skip the Compressor: Coding Agents Fix More Issues When They Pick Whole Files</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Xiaocong Yang, Rishit Chatterjee, Himanshu Udupi e mais 2</p>
+  
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">A coding agent works on repositories that can be far larger than its context window can hold. Prompt compressors and retrievers offer solutions to this problem, but patching an issue needs two things at once: the files that must change, and their code exactly as written, since the model must reproduce the lines it edits. With GPT-5.6 and Claude Opus 5, CQ2-CARE resolves 43.7% and 46.7% of the issues, 6.3 points more than the best of three compressors with either model, and 9.3 and 12.7 points more than the best of three retrievers.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.21073" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.21073" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:26px 32px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+    <td style="border-top:3px solid #1b1a17;border-bottom:1px solid #1b1a17;padding:7px 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+      font-size:12px;font-weight:bold;letter-spacing:2.5px;text-transform:uppercase;color:#1b1a17;">Engenharia de Software</td>
+  </tr></table>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;border-bottom:1px solid #d6ccb8;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">cs.SE · cs.PL</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.22089" style="color:#1b1a17;text-decoration:none;">Are We Testing the Wrong Quantum Bugs? A Study of Fault Representation Gaps in Quantum Software Testing</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Asif Mohammed Saad, Ahsanul Ameen Sabit, Jonah Brandenburgh e mais 3</p>
+  
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">Quantum software relies on compilers, intermediate representations, and execution frameworks that transform programs before execution. We investigate how well the faults represented by these artifacts reflect those encountered in modern quantum software. Yet only 56 of the 410 real-world bugs (13.7%) belong to families represented by either source; the remaining 354 (86.3%) belong to families absent from both.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.22089" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.22089" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;border-bottom:1px solid #d6ccb8;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">cs.SE · quant-ph</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.21714" style="color:#1b1a17;text-decoration:none;">Realization Divergence in Multi-Provider Quantum Computing: A Pre-Registered Study of What Survives Measurement</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Jouni Peltonen, Vlad Stirbu e Tommi Mikkonen</p>
+  
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">Quantum programs pass through compilers, transpilers and vendor services before execution. We report a hardware study across three vendors and four devices, combining pre-registered predictions with explicitly identified exploratory analyses and amendments.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.21714" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.21714" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">cs.SE · cs.RO</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.20807" style="color:#1b1a17;text-decoration:none;">Robotic-supported Data Loss Detection in Android Applications</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Davi Freitas, Breno Miranda e Juliano Iyoda</p>
+  
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">Smartphones have become integral to modern life due to their diverse applications. Our work proposes R-DLD (Robotic-supported Data Loss Detection), a robot-assisted infrastructure for data loss detection in Android applications, offeringless invasive and more realistic tests by interacting directly with smartphone sensors. All reported bugs received responses from the developer, with 89.55% confirming the data loss problems, while 35.82% have being subsequently fixed.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.20807" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.20807" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:26px 32px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+    <td style="border-top:3px solid #1b1a17;border-bottom:1px solid #1b1a17;padding:7px 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+      font-size:12px;font-weight:bold;letter-spacing:2.5px;text-transform:uppercase;color:#1b1a17;">Linguagens &amp; Compiladores</td>
+  </tr></table>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;border-bottom:1px solid #d6ccb8;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">cs.AI · cs.DB · cs.PL</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.22061" style="color:#1b1a17;text-decoration:none;">FAOPs: Normal Forms and an Algebra for AI Agent Workflows</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Ali Mohammadi Shanghooshabad</p>
+  
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">Organizations increasingly encode operational procedures as multi-step agent skills, here called Agent Operating Procedures (AOPs), that must be traceable, auditable, reproducible, access-controlled, and bounded in time and cost, requirements that regulated sectors make mandatory. We present Functional Agent Operating Procedures (FAOP), a formal theory that brings database-grade discipline to AI agent workflows.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.22061" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.22061" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">cs.PL · math.LO</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.21131" style="color:#1b1a17;text-decoration:none;">Normalization by Evaluation with Substitutions as Operations</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Jason Z. S. Hu</p>
+  
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">In previous works on normalization by evaluation (NbE) with an untyped domain model, explicit substitutions are a major decision choice, which, in retrospect, is taken to simplify subsequent semantic proofs. In this technical report, we investigate NbE in a typical setting, i.e. defining substitutions as operations. We show that this setting brings simplifications in proving syntactic properties and soundness of NbE, though complications are introduced in the completeness proof of NbE.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.21131" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.21131" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:26px 32px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+    <td style="border-top:3px solid #1b1a17;border-bottom:1px solid #1b1a17;padding:7px 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+      font-size:12px;font-weight:bold;letter-spacing:2.5px;text-transform:uppercase;color:#1b1a17;">Também nesta edição</td>
+  </tr></table>
+</td></tr><tr><td class="p" style="padding:14px 32px 4px;">
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.18206" style="color:#1b1a17;font-weight:bold;text-decoration:none;">SWE-MISBEHAVIOR: Benchmarking and Mitigating Boundary Violations in Software Coding Agents</a><br>
+    <span style="font-size:14px;color:#625c53;">We present SWE-MISBEHAVIOR, the first taxonomy and evaluation framework for diagnosing boundary-violating misbehaviors in coding agents.</span></p>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.14766" style="color:#1b1a17;font-weight:bold;text-decoration:none;">Last Secure Code Benchmark: Is the Code You Vibe Secure?</a><br>
+    <span style="font-size:14px;color:#625c53;">The Last Secure Code Benchmark reveals that frontier AI coding agents generate functional but rarely secure code across diverse languages and vulnerability classes.</span></p>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.15166" style="color:#1b1a17;font-weight:bold;text-decoration:none;">ExeWorldBench: Benchmarking Code-Based Executable 3D World Modeling</a><br>
+    <span style="font-size:14px;color:#625c53;">ExeWorldBench evaluates executable world modeling by assessing both structural understanding and code-based 3D construction across mechanism, compositional, and intent-driven tasks.</span></p>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.14096" style="color:#1b1a17;font-weight:bold;text-decoration:none;">SWEeper-Bench: Can Agents Discover Bugs in Interactive Software?</a><br>
+    <span style="font-size:14px;color:#625c53;">SWEeper-Bench evaluates coding agents on finding and fixing interaction-dependent bugs in web applications through interactive testing and browser-based verification.</span></p>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.18484" style="color:#1b1a17;font-weight:bold;text-decoration:none;">ReTerm: Recovery Training for Self-Improving Terminal Agents</a><br>
+    <span style="font-size:14px;color:#625c53;">ReTerm trains terminal agents to recover from execution errors via supervised fine-tuning on recovery demonstrations and online reinforcement learning from self-generated failure attempts, substantially improving task success rates.</span></p>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.18755" style="color:#1b1a17;font-weight:bold;text-decoration:none;">PreciseCoder: Faithful and Generalizable Debugging Beyond Unit-Test Rewards</a><br>
+    <span style="font-size:14px;color:#625c53;">PreciseCoder improves code repair by rewarding precise, localized edits rather than only unit-test passage, reducing unnecessary changes and improving generalization across model sizes.</span></p>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.14163" style="color:#1b1a17;font-weight:bold;text-decoration:none;">AutoEnvScaling: Automating the Data Flywheel with Terminal Agents</a><br>
+    <span style="font-size:14px;color:#625c53;">AutoEnvScaling automates reinforcement learning environment creation via terminal agents, enabling recursive self-improvement and reducing human design dependence.</span></p>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.15368" style="color:#1b1a17;font-weight:bold;text-decoration:none;">ANTE: Anticipate, Then Execute -- Learning Internal World Models for Coding Agents from Verified Beliefs</a><br>
+    <span style="font-size:14px;color:#625c53;">ANTE is a reinforcement learning framework that uses pre-action predictions verified by execution to provide per-step credit and improve coding agent decisions, significantly boosting benchmark performance.</span></p></td></tr>
+<tr><td class="p" style="padding:26px 32px 24px;">
+  <div style="border-top:3px double #1b1a17;padding-top:12px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;line-height:1.6;color:#625c53;">
+    Varredura às 15:31 (horário de Brasília) no feed de anúncios do arXiv (cs.SE e cs.PL) e no Hugging Face Daily Papers.
+    Os resumos são trechos dos abstracts escritos pelos próprios autores; a frase em itálico, quando aparece,
+    é o resumo automático do Hugging Face.
+  </div>
+</td></tr>
+</table></td></tr></table>
+</body></html>
