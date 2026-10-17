@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light"><title>O Compilado nº 2 · 17/10 — Terminal-RSI: Recursive Self-Improving Terminal Agents via Recursive S…</title>
+<style>@media (max-width:520px){.p{padding-left:18px!important;padding-right:18px!important}.nome{font-size:40px!important}.manchete{font-size:25px!important}}</style></head>
+<body style="margin:0;padding:0;background:#e9e2d3;">
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;">Terminal-RSI alternates recursive trajectory rewriting with critic-inheriting policy refinement to advance terminal agents from partial progress to strict verification.</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#e9e2d3;"><tr><td align="center" style="padding:24px 10px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:660px;background:#fbf8f1;border:1px solid #d6ccb8;">
+<tr><td class="p" style="padding:18px 32px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+    <td style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#625c53;">sábado, 17 de outubro de 2026</td>
+    <td align="right" style="white-space:nowrap;padding-left:12px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#625c53;">Edição nº 2</td>
+  </tr></table>
+</td></tr>
+<tr><td class="p" align="center" style="padding:10px 32px 0;">
+  <div style="border-top:4px solid #1b1a17;"></div>
+  <h1 class="nome" style="margin:14px 0 2px;font-family:Georgia,'Times New Roman',Times,serif;font-size:52px;line-height:1;font-weight:bold;letter-spacing:-1px;color:#1b1a17;">O Compilado</h1>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;font-style:italic;color:#625c53;">Os papers de programação do dia, resumidos às 8h</p>
+  <div style="border-top:1px solid #1b1a17;padding-top:3px;"><div style="border-top:1px solid #1b1a17;"></div></div>
+  <p style="margin:8px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#625c53;">
+    3 papers nesta edição &nbsp;·&nbsp; 172 analisados &nbsp;·&nbsp; arXiv + Hugging Face</p>
+</td></tr>
+
+<tr><td class="p" style="padding:22px 32px 6px;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#9b1c1c;">Manchete — 25 votos no Hugging Face</p>
+  <h1 class="manchete" style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:30px;line-height:1.15;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.22192" style="color:#1b1a17;text-decoration:none;">Terminal-RSI: Recursive Self-Improving Terminal Agents via Recursive Self-Rewrite and Policy-Refine</a></h1>
+  <p style="margin:0 0 14px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Junyao Yang, Zongxia Li, Yucheng Shi, Zhongzhi Li e mais 5 · Tencent</p>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:18px;line-height:1.45;font-style:italic;color:#1b1a17;">Terminal-RSI alternates recursive trajectory rewriting with critic-inheriting policy refinement to advance terminal agents from partial progress to strict verification.</p>
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.65;color:#1b1a17;"><span style="float:left;font-family:Georgia,'Times New Roman',Times,serif;font-size:54px;line-height:46px;padding:5px 8px 0 0;color:#1b1a17;font-weight:bold;">C</span>onverting verifier outcomes into useful policy updates and partial progress into complete task resolution is crucial for terminal agents. We present Terminal-RSI, which alternates Recursive Self-Rewrite (RSR) of verified trajectories with critic-inheriting Recursive Policy-Refine (RPR). We formulate Turn-Boundary Skip-Observation GAE (TB-GAE) to retain token-specific baselines while applying decay across interaction turns. Family Dense Reward (FDR) calibrates semantic progress across task families; Success-Prioritized Reward (SPR) separates strict success from bounded partial credit. A Warm-up Critic Model, recursive critic handoff, and stage-specific learning rates coordinate the two refinement phases. The five-stage sequence from Qwen3.8-27B base model through RSR-1, RPR-1, RSR-2, and RPR-2 yields Terminal-RSI-27B: 19.84% on Terminal-Bench 4.0, 86.52% on Terminal-Bench 2.1, 16.95% on Terminal-Bench 3.0, and 79.00% on Terminal-Bench Hard. On LHTB, process reward rises from 0.21 to 0.37 and strict completion from 0/46 to 5/46; SWR100 success doubles from 3.00% to 6.00%. By recursively coupling verified trajectory rewriting with critic-inheriting policy refinement, each retained stage consolidates discovered behaviors and progressively advances the agent from partial local repairs to strict terminal verification.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.22192" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.22192" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a> &nbsp;·&nbsp; <a href="https://huggingface.co/papers/2610.22192" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Discussão no HF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:26px 32px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+    <td style="border-top:3px solid #1b1a17;border-bottom:1px solid #1b1a17;padding:7px 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+      font-size:12px;font-weight:bold;letter-spacing:2.5px;text-transform:uppercase;color:#1b1a17;">Em alta na comunidade</td>
+  </tr></table>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">8 votos no Hugging Face</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.17831" style="color:#1b1a17;text-decoration:none;">Diff Diffusion: Predicting Edit Paths with Diffusion Models for Efficient Code Editing</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Xiaolong Xu, Hao Jiang, Bo Jiang e mais 5</p>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:16px;line-height:1.45;font-style:italic;color:#1b1a17;">Diff Diffusion is a diffusion-based language model framework that predicts structured code edits to enable fast, accurate, low-latency modifications in AI-assisted development environments.</p>
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">Diffusion large language models (dLLMs) are appealing for code generation because they can update many tokens in parallel, yet many are optimized for sequence synthesis rather than edit prediction. We propose Diff Diffusion, a diffusion-inspired LLM framework for code editing that predicts edit paths from an original snippet to its revised form. Across public edit-completion benchmarks, edit-prediction evaluations, and online validation, Diff Diffusion matches or leads autoregressive baselines while delivering 2.78 times faster inference on public edit-completion benchmarks and a 39.0% P50 model-latency reduction in production.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.17831" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.17831" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a> &nbsp;·&nbsp; <a href="https://huggingface.co/papers/2610.17831" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Discussão no HF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:26px 32px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+    <td style="border-top:3px solid #1b1a17;border-bottom:1px solid #1b1a17;padding:7px 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+      font-size:12px;font-weight:bold;letter-spacing:2.5px;text-transform:uppercase;color:#1b1a17;">Também nesta edição</td>
+  </tr></table>
+</td></tr><tr><td class="p" style="padding:14px 32px 4px;">
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.14216" style="color:#1b1a17;font-weight:bold;text-decoration:none;">Cortex: Measurement-Gated Evolution and Pruning of Coding-Agent Skills and Rules</a><br>
+    <span style="font-size:14px;color:#625c53;">Cortex validates agent harness updates by replaying developer corrections, retaining only rules and skills that consistently improve performance without degrading tasks.</span></p></td></tr>
+<tr><td class="p" style="padding:26px 32px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+    <td style="border-top:3px solid #1b1a17;border-bottom:1px solid #1b1a17;padding:7px 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+      font-size:12px;font-weight:bold;letter-spacing:2.5px;text-transform:uppercase;color:#1b1a17;">Os mais votados da semana</td>
+  </tr></table>
+</td></tr><tr><td class="p" style="padding:10px 32px 0;font-family:Georgia,'Times New Roman',Times,serif;font-size:14px;font-style:italic;color:#625c53;">Dia fraco de anúncios no arXiv, então vai uma retrospectiva do que mais circulou nos últimos 7 dias.</td></tr><tr><td class="p" style="padding:14px 32px 4px;">
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.13361" style="color:#1b1a17;font-weight:bold;text-decoration:none;">AgentSWE: Can Coding Agents Build the Agent You Actually Want?</a> <span style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;color:#9b1c1c;">232 votos</span><br>
+    <span style="font-size:14px;color:#625c53;">AgentSWE evaluates whether coding agents build software that truly meets user requirements across creation, editing, and optimization stages, revealing widespread failures to deliver faithful behavior.</span></p>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.18860" style="color:#1b1a17;font-weight:bold;text-decoration:none;">AesCode: Aesthetic Code Generation with Decoupled Cross-Modal Rewards</a> <span style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;color:#9b1c1c;">124 votos</span><br>
+    <span style="font-size:14px;color:#625c53;">AesCode improves code generation for visual artifacts by combining design graphs with cross-modal rewards guided by reference images, enhancing layout, aesthetics, and verifiable correctness.</span></p>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.20344" style="color:#1b1a17;font-weight:bold;text-decoration:none;">Doc2Harness: Benchmarking LLMs on Long-Horizon Harness Engineering of Coding Agents</a> <span style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;color:#9b1c1c;">104 votos</span><br>
+    <span style="font-size:14px;color:#625c53;">Doc2Harness is a deterministic two-stage benchmark that evaluates long-horizon harness engineering by having models build and run harnesses across isolated containers, revealing substantial performance gaps among frontier models.</span></p>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.22341" style="color:#1b1a17;font-weight:bold;text-decoration:none;">3DCodeVerse: Exploring 3D Worlds as Code</a> <span style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;color:#9b1c1c;">102 votos</span><br>
+    <span style="font-size:14px;color:#625c53;">3DCodeVerse is a research ecosystem that provides datasets, automated verification harnesses, and empirical guidance to enable scalable, editable, and verifiable 3D content generation via executable code.</span></p>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.15166" style="color:#1b1a17;font-weight:bold;text-decoration:none;">ExeWorldBench: Benchmarking Code-Based Executable 3D World Modeling</a> <span style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;color:#9b1c1c;">81 votos</span><br>
+    <span style="font-size:14px;color:#625c53;">ExeWorldBench evaluates executable world modeling by assessing both structural understanding and code-based 3D construction across mechanism, compositional, and intent-driven tasks.</span></p></td></tr>
+<tr><td class="p" style="padding:26px 32px 24px;">
+  <div style="border-top:3px double #1b1a17;padding-top:12px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;line-height:1.6;color:#625c53;">
+    Varredura às 10:56 (horário de Brasília) no feed de anúncios do arXiv (cs.SE e cs.PL) e no Hugging Face Daily Papers.
+    Os resumos são trechos dos abstracts escritos pelos próprios autores; a frase em itálico, quando aparece,
+    é o resumo automático do Hugging Face.
+  </div>
+</td></tr>
+</table></td></tr></table>
+</body></html>
