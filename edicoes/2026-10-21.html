@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light"><title>O Compilado nº 6 · 21/10 — S-Agent 2.0: Spatial Reasoning with a General Coding Agent</title>
+<style>@media (max-width:520px){.p{padding-left:18px!important;padding-right:18px!important}.nome{font-size:40px!important}.manchete{font-size:25px!important}}</style></head>
+<body style="margin:0;padding:0;background:#e9e2d3;">
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;">S-Agent 2.0 improves spatial reasoning by integrating a persistent scene memory and plain-language interpretation into a coding agent with 3D perception tools.</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#e9e2d3;"><tr><td align="center" style="padding:24px 10px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:660px;background:#fbf8f1;border:1px solid #d6ccb8;">
+<tr><td class="p" style="padding:18px 32px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+    <td style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#625c53;">quarta-feira, 21 de outubro de 2026</td>
+    <td align="right" style="white-space:nowrap;padding-left:12px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#625c53;">Edição nº 6</td>
+  </tr></table>
+</td></tr>
+<tr><td class="p" align="center" style="padding:10px 32px 0;">
+  <div style="border-top:4px solid #1b1a17;"></div>
+  <h1 class="nome" style="margin:14px 0 2px;font-family:Georgia,'Times New Roman',Times,serif;font-size:52px;line-height:1;font-weight:bold;letter-spacing:-1px;color:#1b1a17;">O Compilado</h1>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;font-style:italic;color:#625c53;">Os papers de programação do dia, resumidos às 8h</p>
+  <div style="border-top:1px solid #1b1a17;padding-top:3px;"><div style="border-top:1px solid #1b1a17;"></div></div>
+  <p style="margin:8px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#625c53;">
+    20 papers nesta edição &nbsp;·&nbsp; 239 analisados &nbsp;·&nbsp; arXiv + Hugging Face</p>
+</td></tr>
+
+<tr><td class="p" style="padding:22px 32px 6px;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#9b1c1c;">Manchete — 86 votos no Hugging Face</p>
+  <h1 class="manchete" style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:30px;line-height:1.15;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.28354" style="color:#1b1a17;text-decoration:none;">S-Agent 2.0: Spatial Reasoning with a General Coding Agent</a></h1>
+  <p style="margin:0 0 14px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Rui Gong, Ruoyu Wang, Yalun Dai, Hao Li e mais 8 · Ropedia</p>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:18px;line-height:1.45;font-style:italic;color:#1b1a17;">S-Agent 2.0 improves spatial reasoning by integrating a persistent scene memory and plain-language interpretation into a coding agent with 3D perception tools.</p>
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.65;color:#1b1a17;"><span style="float:left;font-family:Georgia,'Times New Roman',Times,serif;font-size:54px;line-height:46px;padding:5px 8px 0 0;color:#1b1a17;font-weight:bold;">S</span>patial reasoning asks a model to work out where objects are in 3D space, how they relate to one another, and how they move. Agentic VLMs have recently brought large improvements on such tasks by letting the model actively gather evidence with 3D perception tools instead of answering in a single pass. Even so, on many questions the tools return the right evidence and the model still does not arrive at the correct answer: the gap between model and tools, where raw readings become usable conclusions, is left unfilled. We present S-Agent 2.0, a spatial reasoning agent that equips an off-the-shelf general coding agent with a command-line perception toolkit, and we design the interface around one principle: help the VLM close the evidence loop: acquire scene evidence, remember it in a persistent scene memory, and interpret each reading in plain spatial language. This design keeps the full flexibility of a coding agent, and every reading it acts on stays grounded in the tools&#x27; geometry. On MMSI-Bench and ReVSI, the toolkit improves a strong open-source model, Qwen3.8-27B, by +13.9 and +20.5 points over the same agent without tools, and a strong closed-source model, Gemini-3.8-Flash, by +11.2 and +9.6 points. With the open backbone S-Agent 2.0 reaches 66.5 on MMSI-Bench and 82.3 on ReVSI, ahead of the specialized system SpatialClaw on the same backbone (62.6 and 74.5), and with Gemini-3.8-Flash it reaches 74.1 and 90.5 against its 67.0 and 79.7. Both tool gains shrink as the backbone grows more capable, but SpatialClaw&#x27;s shrinks far more on ReVSI, from +13.2 to +2.7, while ours stays at +9.6. S-Agent 2.0 also works across different general coding agent harnesses, such as Codex and Claude Code.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.28354" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.28354" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a> &nbsp;·&nbsp; <a href="https://github.com/Ropedia/S-Agent-2.0" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Código ★12</a> &nbsp;·&nbsp; <a href="https://huggingface.co/papers/2610.28354" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Discussão no HF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:26px 32px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+    <td style="border-top:3px solid #1b1a17;border-bottom:1px solid #1b1a17;padding:7px 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+      font-size:12px;font-weight:bold;letter-spacing:2.5px;text-transform:uppercase;color:#1b1a17;">Em alta na comunidade</td>
+  </tr></table>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;border-bottom:1px solid #d6ccb8;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">8 votos no Hugging Face</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.27327" style="color:#1b1a17;text-decoration:none;">Unsupervised Tool Evolution for Coding Agents in Data-Lake Analytics</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Yuqing Yang, Yurong Liu, Deqing Fu e mais 5 · Google</p>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:16px;line-height:1.45;font-style:italic;color:#1b1a17;">TEAL evolves reusable data-analysis tools for coding agents without ground-truth labels by combining data-driven exploration and trajectory-based critique, improving accuracy under tight step budgets.</p>
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">Coding agents can answer analytical questions over a data lake by discovering, cleaning, and joining the relevant data. However, they discard this work after each question and redo it from scratch for the next one. With a tight budget of 10 or 15 steps, TEAL improves every Worker on both benchmarks, lifting Sonnet-5 at 15 steps by 9.3 points on KramaBench and 21.7 points on LakeQA.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.27327" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.27327" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a> &nbsp;·&nbsp; <a href="https://huggingface.co/papers/2610.27327" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Discussão no HF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;border-bottom:1px solid #d6ccb8;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">8 votos no Hugging Face</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.27435" style="color:#1b1a17;text-decoration:none;">Harness Self-Evolution for Long-Horizon Terminal Agents</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Ruhan Wang, Yucheng Shi, Zongxia Li e mais 6 · Tencent Hunyuan</p>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:16px;line-height:1.45;font-style:italic;color:#1b1a17;">RiseHarness iteratively improves agent harness reliability by analyzing execution traces and integrating mechanisms from other frameworks without altering model weights.</p>
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">Long-horizon terminal agents may solve a task in one run yet fail across repeated runs. We present RiseHarness, a framework for iteratively improving agent harnesses with model weights fixed.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.27435" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.27435" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a> &nbsp;·&nbsp; <a href="https://huggingface.co/papers/2610.27435" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Discussão no HF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">6 votos no Hugging Face</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.24611" style="color:#1b1a17;text-decoration:none;">HSPR: Recovering Software-Agent Benchmark Scores via Hierarchical Posterior Inference</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Wanyi Chen, Wanqin Shen, Yuanchen Shi e mais 2 · Soochow University</p>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:16px;line-height:1.45;font-style:italic;color:#1b1a17;">Hierarchical Score Posterior Recovery improves agent evaluation efficiency by combining historical response patterns with adaptive task selection to estimate full benchmark scores from small subsets.</p>
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">Evaluating software agents on a full benchmark is expensive. We introduce Hierarchical Score Posterior Recovery (HSPR), which combines source-fitted response factors with uncertain group success rates. At a 10% task budget on four task banks from the SWE-bench family, HSPR achieves the lowest mean absolute error (MAE) on three banks and the lowest maximum absolute error (MaxErr) on all four among the methods compared.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.24611" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.24611" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a> &nbsp;·&nbsp; <a href="https://github.com/wanyichen06/HSPR" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Código</a> &nbsp;·&nbsp; <a href="https://huggingface.co/papers/2610.24611" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Discussão no HF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:26px 32px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+    <td style="border-top:3px solid #1b1a17;border-bottom:1px solid #1b1a17;padding:7px 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+      font-size:12px;font-weight:bold;letter-spacing:2.5px;text-transform:uppercase;color:#1b1a17;">IA aplicada ao código</td>
+  </tr></table>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;border-bottom:1px solid #d6ccb8;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">cs.SE</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.28612" style="color:#1b1a17;text-decoration:none;">TraceLite: Efficient Trace Reduction for SWE Agents via Optical Compression and Redundancy Removal</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Jingyu Xiao, Qianxi Liu, Yintong Huo e mais 2</p>
+  
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">Software engineering agents solve repository-level tasks through iterative tool use, but their continuously growing interaction traces incur substantial token consumption and inference overhead. We present TraceLite, a simple yet effective, training-free framework for compressing heterogeneous SWE-agent observations. On SWE-bench Verified, TraceLite achieves 78.25% resolve rate, outperforming the evaluated compression baselines while reducing average input-token consumption and API cost by 33.05% and 21.30%, respectively.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.28612" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.28612" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a> &nbsp;·&nbsp; <a href="https://github.com/xjywhu/TraceLite" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Código</a></p>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;border-bottom:1px solid #d6ccb8;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">cs.SE</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.27381" style="color:#1b1a17;text-decoration:none;">Documentation Drift in AI-Generated Pull Requests</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Will De Michele e Kla Tantithamthavorn</p>
+  
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">AI coding agents now contribute to software repositories at scale, yet their documentation practices remain uncharacterised. We analyse 29,669 AI-generated pull requests from 2,585 repositories in the AIDev dataset, measuring documentation co-change: whether code-file modifications are accompanied by a documentation-file update in the same PR. We find that 63.2% of AI PRs change code without updating any documentation.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.27381" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.27381" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">cs.SE · cs.AI</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.27868" style="color:#1b1a17;text-decoration:none;">Hallucinations of Large Language Models in Cross-Language Code Translation: Phenomena and Mitigation</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Yali Du, Yunji Zhang e Ming Li</p>
+  
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">Code translation converts source code from one programming language to another while preserving its functionality. This paper presents a systematic empirical study of LLM hallucinations in code translation.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.27868" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.27868" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:26px 32px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+    <td style="border-top:3px solid #1b1a17;border-bottom:1px solid #1b1a17;padding:7px 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+      font-size:12px;font-weight:bold;letter-spacing:2.5px;text-transform:uppercase;color:#1b1a17;">Engenharia de Software</td>
+  </tr></table>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;border-bottom:1px solid #d6ccb8;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">cs.SE — aceito: In Proceedings of the 41st IEEE/ACM International Conference</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.27826" style="color:#1b1a17;text-decoration:none;">MIMOS-Tools: An Integrated Toolchain for Model-Based Design of Embedded Systems</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Wang Yi, Chengzi Huang, Behnam Khodabandeloo e mais 1</p>
+  
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">Despite decades of progress in model-based methods and tools for embedded real-time systems, there is still no integrated environment that supports the entire development lifecycle. This paper presents MIMOS-Tools, a comprehensive toolchain spanning the key phases of development, including modeling, simulation, formal verification, real-time scheduling, schedulability and end-to-end latency analysis, and code generation for heterogeneous multicore platforms.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.27826" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.27826" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;border-bottom:1px solid #d6ccb8;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">cs.SE · cs.CR</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.27828" style="color:#1b1a17;text-decoration:none;">Raise or Check? Predicting the Necessity of Additional Fuzzing for Continuous Fuzzing</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Riku Kato, Tatsuya Shirai, Olivier Nourry e mais 4</p>
+  
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">Continuous fuzzing is used for vulnerability detection in Open Source Software (OSS). We propose RAISE (Risk-Aware Intensive Supplemental Execution Framework), a Just-In-Time (JIT) framework that prioritizes additional fuzzing for high-risk project-days. We construct a dataset combining vulnerability-introducing commits from the OSV database with daily coverage and change metrics from OSS-Fuzz, covering 15 C/C++ projects and 15,210 project-days, of which 347 (2.28%) are vulnerability-introducing.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.27828" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.27828" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">cs.SE</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.26889" style="color:#1b1a17;text-decoration:none;">Learning from Past Mistakes: AI-Assisted Analytics of Software Defects and Their Fixes for Future Defect Prevention - An Industrial Case Study</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Vehid Goruslu</p>
+  
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">Context. This paper investigates how historical defect and defect-fix data can be analyzed, with AI assistance under human oversight, to identify the human-error origins of recurring defects and to feed that understanding back into prevention and QA improvement. AI-assisted, human-governed analysis of defect-fix data can help shift organizations from defect detection toward prevention, continuous learning and improvement.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.26889" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.26889" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:26px 32px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+    <td style="border-top:3px solid #1b1a17;border-bottom:1px solid #1b1a17;padding:7px 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+      font-size:12px;font-weight:bold;letter-spacing:2.5px;text-transform:uppercase;color:#1b1a17;">Linguagens &amp; Compiladores</td>
+  </tr></table>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;border-bottom:1px solid #d6ccb8;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">cs.PL · cs.CR · cs.DC</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.27971" style="color:#1b1a17;text-decoration:none;">Execution-Time Validation of Context-Carrying Action Intents in Industrial Cyber-Physical Systems</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Luca D&#x27;Agati, Giuseppe Tricomi, Fabio Orazio Mirto e mais 1</p>
+  
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">In industrial cells, commands from learned policies, operators and schedulers reach the controller after inference, confirmation and transport, and the plant may have changed meanwhile, for instance by an operator pause.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.27971" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.27971" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">cs.PL · cs.LO</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.28525" style="color:#1b1a17;text-decoration:none;">What is a Good Projection?: Correctness and Separation Results of End-Point Projections</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Jake Masters e Nobuko Yoshida</p>
+  
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">\emph{Multiparty session types} (MPST) is a type discipline for ensuring distributed programs are implemented correctly \emph{by construction}. To overcome this problem, we propose general criteria for a \emph{good projection} -- a set of requirements for projection algorithms by which type soundness, deadlock-freedom and liveness of distributed programs are \emph{automatically} derived.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.28525" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.28525" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:26px 32px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+    <td style="border-top:3px solid #1b1a17;border-bottom:1px solid #1b1a17;padding:7px 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+      font-size:12px;font-weight:bold;letter-spacing:2.5px;text-transform:uppercase;color:#1b1a17;">Também nesta edição</td>
+  </tr></table>
+</td></tr><tr><td class="p" style="padding:14px 32px 4px;">
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2606.31002" style="color:#1b1a17;font-weight:bold;text-decoration:none;">Beyond Compilation: Evaluating Faithful Natural-Language-to-Lean Statement Formalization</a><br>
+    <span style="font-size:14px;color:#625c53;">The study evaluates whether Lean compilation alone ensures faithful statement autoformalization, finding substantial gaps between compiling and semantically accepted outputs across multiple systems, with tool-augmented agents improving compilation but still exhibiting real translation errors.</span></p>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.27694" style="color:#1b1a17;font-weight:bold;text-decoration:none;">Enhancing Bug-Exposing Test Generation via Step-Level Credit Assignment and Self-Distillation from Valuable Failures</a><br>
+    <span style="font-size:14px;color:#625c53;">To address these limitations, we propose SCALF, a process-supervised RL approach that combines Step-level Credit Assignment with targeted Learning from valuable Failed trajectories.</span></p>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.28160" style="color:#1b1a17;font-weight:bold;text-decoration:none;">From Code Generator to Engineering Companion: A Plant-aware Agent for PLC Programming</a><br>
+    <span style="font-size:14px;color:#625c53;">We present a plant-aware conversational copilot that extends this paradigm in three directions: plant-specific context ingestion, a chat-first interaction model for explanation and debugging, and a…</span></p>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.27272" style="color:#1b1a17;font-weight:bold;text-decoration:none;">Certifying Repeatable Entry-Replay Witnesses for COBOL-to-Java Migration</a><br>
+    <span style="font-size:14px;color:#625c53;">We applied our method to a very large COBOL program with 33,429 lines of code to generate 849 synthetic end-to-end test cases covering 2,973/3,806 source branches (78.1%) and 989/1,033 main-AST…</span></p>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.27693" style="color:#1b1a17;font-weight:bold;text-decoration:none;">Knowledge as Code</a><br>
+    <span style="font-size:14px;color:#625c53;">This paper is a contribution to epistemology, which asks what kind of knowledge code is and how it is obtained.</span></p>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.27871" style="color:#1b1a17;font-weight:bold;text-decoration:none;">A Neuro-Symbolic Reasoning Engine for Compilation-Free Patch Presence Testing</a><br>
+    <span style="font-size:14px;color:#625c53;">To overcome these limitations, we propose SyLares, which reformulates compilation-free patch presence testing as neuro-symbolic reasoning.</span></p>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.27784" style="color:#1b1a17;font-weight:bold;text-decoration:none;">RELAY: Scaling Historical Build Restoration through Rule Reuse and Agentic Repair</a><br>
+    <span style="font-size:14px;color:#625c53;">In this study, we examine this environment decay on 14,159 OSS-Fuzz cases.</span></p>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.27634" style="color:#1b1a17;font-weight:bold;text-decoration:none;">Standards-Guided and Dependency-Aware Code-Level Documentation Generation</a><br>
+    <span style="font-size:14px;color:#625c53;">We present CODEDOC, a standards-guided and dependency-aware framework that identifies dependencies between code entities via static call-graph and AST analysis and constructs dependency-aware…</span></p></td></tr>
+<tr><td class="p" style="padding:26px 32px 24px;">
+  <div style="border-top:3px double #1b1a17;padding-top:12px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;line-height:1.6;color:#625c53;">
+    Varredura às 12:37 (horário de Brasília) no feed de anúncios do arXiv (cs.SE e cs.PL) e no Hugging Face Daily Papers.
+    Os resumos são trechos dos abstracts escritos pelos próprios autores; a frase em itálico, quando aparece,
+    é o resumo automático do Hugging Face.
+  </div>
+</td></tr>
+</table></td></tr></table>
+</body></html>
