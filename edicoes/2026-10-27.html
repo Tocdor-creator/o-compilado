@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light"><title>O Compilado nº 12 · 27/10 — $\Delta\tau$-Bench: Pushing Agents Toward a Moving Capability</title>
+<style>@media (max-width:520px){.p{padding-left:18px!important;padding-right:18px!important}.nome{font-size:40px!important}.manchete{font-size:25px!important}}</style></head>
+<body style="margin:0;padding:0;background:#e9e2d3;">
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;">Δτ-Bench evaluates agent adaptability to evolving tool ecosystems, and Steward improves sustained success through incremental skill maintenance and dynamic provisioning.</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#e9e2d3;"><tr><td align="center" style="padding:24px 10px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:660px;background:#fbf8f1;border:1px solid #d6ccb8;">
+<tr><td class="p" style="padding:18px 32px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+    <td style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#625c53;">terça-feira, 27 de outubro de 2026</td>
+    <td align="right" style="white-space:nowrap;padding-left:12px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#625c53;">Edição nº 12</td>
+  </tr></table>
+</td></tr>
+<tr><td class="p" align="center" style="padding:10px 32px 0;">
+  <div style="border-top:4px solid #1b1a17;"></div>
+  <h1 class="nome" style="margin:14px 0 2px;font-family:Georgia,'Times New Roman',Times,serif;font-size:52px;line-height:1;font-weight:bold;letter-spacing:-1px;color:#1b1a17;">O Compilado</h1>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;font-style:italic;color:#625c53;">Os papers de programação do dia, resumidos às 8h</p>
+  <div style="border-top:1px solid #1b1a17;padding-top:3px;"><div style="border-top:1px solid #1b1a17;"></div></div>
+  <p style="margin:8px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#625c53;">
+    18 papers nesta edição &nbsp;·&nbsp; 187 analisados &nbsp;·&nbsp; arXiv + Hugging Face</p>
+</td></tr>
+
+<tr><td class="p" style="padding:22px 32px 6px;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#9b1c1c;">Manchete — cs.CL · cs.AI · cs.CV — 21 votos no Hugging Face</p>
+  <h1 class="manchete" style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:30px;line-height:1.15;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.34238" style="color:#1b1a17;text-decoration:none;">$\Delta\tau$-Bench: Pushing Agents Toward a Moving Capability</a></h1>
+  <p style="margin:0 0 14px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Shuofei Qiao, Xuanguang Pan, Yijun Chen, Wendi Feng e mais 5 · University College London</p>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:18px;line-height:1.45;font-style:italic;color:#1b1a17;">Δτ-Bench evaluates agent adaptability to evolving tool ecosystems, and Steward improves sustained success through incremental skill maintenance and dynamic provisioning.</p>
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.65;color:#1b1a17;"><span style="float:left;font-family:Georgia,'Times New Roman',Times,serif;font-size:54px;line-height:46px;padding:5px 8px 0 0;color:#1b1a17;font-weight:bold;">I</span>n this paper, we introduce $\Delta\tau$-Bench, an executable agent benchmark that models the structural evolution of large tool ecosystems. In $\Delta\tau$-Bench, independently evolving services continually reshape how tasks can be accomplished: familiar tools may disappear or be replaced, while more efficient alternatives emerge amid overlapping functionality and noisy documentation. Against this moving capability frontier, we evaluate whether agents can proactively discover efficient tool-use paths and promptly revise their accumulated procedural knowledge, bringing together demands that existing benchmarks fail to examine. $\Delta\tau$-Bench comprises 1,588 validated multi-turn tasks across 42 domains and six successive ecosystem states generated through capability-preserving transformations. Our evaluation shows that even the strongest evaluated model or harness achieves only 42.3% task success, while initial gains from existing skill-learning methods can not consistently translate into better adaptation as the ecosystem evolves. These findings motivate Steward, an ecosystem manager that jointly manages tools and procedural knowledge through incremental skill maintenance and dynamic provisioning during task execution. Experiments show that Steward sustains higher task success across ecosystem changes with lower skill-maintenance overhead, while improving both recovery from disrupted workflows and adoption of more efficient alternatives.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.34238" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.34238" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a> &nbsp;·&nbsp; <a href="https://github.com/zjunlp/delta-tau-bench" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Código ★3</a> &nbsp;·&nbsp; <a href="https://huggingface.co/papers/2610.34238" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Discussão no HF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:26px 32px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+    <td style="border-top:3px solid #1b1a17;border-bottom:1px solid #1b1a17;padding:7px 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+      font-size:12px;font-weight:bold;letter-spacing:2.5px;text-transform:uppercase;color:#1b1a17;">Em alta na comunidade</td>
+  </tr></table>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">cs.MA · cs.AI · cs.SE — 7 votos no Hugging Face</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.34634" style="color:#1b1a17;text-decoration:none;">AgentProofBench: Benchmarking Reusable Verifiers for Web Agents</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Jingjie Ning, Xueqi Li, Yi Lu e mais 1 · Carnegie Mellon University</p>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:16px;line-height:1.45;font-style:italic;color:#1b1a17;">AgentProofBench evaluates reusable web-agent verification by linking frozen acceptance rules to execution traces, establishing baseline measurements for program-gate correctness and reuse.</p>
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">Reusable Web-agent verification requires a rule to follow changing requirements and support subsequent execution. We introduce AgentProofBench, which connects paired tests of a frozen acceptance rule to execution from identical saved openings.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.34634" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.34634" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a> &nbsp;·&nbsp; <a href="https://github.com/EthanNing/AgentProofBench" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Código</a> &nbsp;·&nbsp; <a href="https://huggingface.co/papers/2610.34634" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Discussão no HF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:26px 32px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+    <td style="border-top:3px solid #1b1a17;border-bottom:1px solid #1b1a17;padding:7px 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+      font-size:12px;font-weight:bold;letter-spacing:2.5px;text-transform:uppercase;color:#1b1a17;">IA aplicada ao código</td>
+  </tr></table>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;border-bottom:1px solid #d6ccb8;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">cs.SE · cs.LG</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.35488" style="color:#1b1a17;text-decoration:none;">FeatureLoop: Benchmarking Coding Agents under Evolving Requirements</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Jia Feng, Alyssa Wu, Cuiyun Gao e mais 3</p>
+  
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">Software development with coding agents often begins with a rough request that users refine after trying the implementation. We introduce FeatureLoop, a benchmark of 61 human-reviewed tasks from 34 repositories across five primary programming languages and seven software forms. We evaluate 12 frontier models and find that the strongest completes 72.1% of tasks with both feedback types.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.35488" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.35488" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;border-bottom:1px solid #d6ccb8;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">cs.SE · cs.LG</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.33851" style="color:#1b1a17;text-decoration:none;">Software Engineering LLMs: Why We Need Them and How Software Engineering Helps Build Them</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Amir M. Ebrahimi, Mohammed Mehedi Hasan, Seyed Shayan Daneshvar e mais 3</p>
+  
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">Software engineering (SE) expertise can shape how coding large language models (LLMs) are trained and which engineering capabilities they acquire. We report lessons from constructing capability-focused training data and evaluating its effects across engineering workloads.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.33851" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.33851" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">cs.SE</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.34613" style="color:#1b1a17;text-decoration:none;">Do AI Coding Agents Write Infrastructure as Code Like Humans? An Empirical Study of GitHub Pull Requests</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Amine Barrak, Emna Ksontini e Charles Wehbe</p>
+  
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">Infrastructure-as-Code (IaC) configurations define cloud resources, networking, and access control, and AI coding agents increasingly write them. We study 349,156 IaC pull requests (PRs) from 49,241 GitHub repositories, distinguishing humans, automation bots, silent agents, and disclosed agents. Bots account for 32.9% of ostensibly human PRs, and 12.3% of the remaining PRs contain agent traces, a share that grows over the study period.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.34613" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.34613" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:26px 32px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+    <td style="border-top:3px solid #1b1a17;border-bottom:1px solid #1b1a17;padding:7px 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+      font-size:12px;font-weight:bold;letter-spacing:2.5px;text-transform:uppercase;color:#1b1a17;">Engenharia de Software</td>
+  </tr></table>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;border-bottom:1px solid #d6ccb8;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">cs.SE</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.33389" style="color:#1b1a17;text-decoration:none;">OneCodeReviewBench: Typed Decisions for Code Review and Search</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Mohamad Mohebifar e Alex Bit</p>
+  
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">Code review requires finding functional bugs, memory-safety errors, security weaknesses, and performance problems across languages and software stacks. Tools can express bounded parts of this work as decisions about supplied code. We compare ten model--adapter systems on the same cases and contracts: OpenAI Decisions reaches 81.3% Boolean balanced accuracy; Kev-27B reaches 76.8% Choice accuracy and Score mean absolute error of 0.367.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.33389" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.33389" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;border-bottom:1px solid #d6ccb8;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">cs.SE · cs.CR · cs.CY</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.34187" style="color:#1b1a17;text-decoration:none;">The Policies of Programming Language Ecosystems: A &quot;Qualitative&quot; Analysis</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Jukka Ruohonen, Rahime Yilmaz e Krzysztof Sierszecki</p>
+  
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">Programming language ecosystems (PLEs), such as CRAN for R, have greatly accelerated software reuse. At the same time, they have increased software supply-chain risks and incidents.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.34187" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.34187" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">cs.SE</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.33350" style="color:#1b1a17;text-decoration:none;">EVM-Anchored Provenance for AI-Assisted Code Evolution: A Smoke-Scale Deployment Report</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Einar C\&#x27;esar Santos</p>
+  
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">We report a smoke-scale deployment of an EVM-anchored provenance framework for the state stream produced by AI-assisted code generation.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.33350" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.33350" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:26px 32px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+    <td style="border-top:3px solid #1b1a17;border-bottom:1px solid #1b1a17;padding:7px 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+      font-size:12px;font-weight:bold;letter-spacing:2.5px;text-transform:uppercase;color:#1b1a17;">Linguagens &amp; Compiladores</td>
+  </tr></table>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;border-bottom:1px solid #d6ccb8;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">cs.PL</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.34205" style="color:#1b1a17;text-decoration:none;">PastaLean: Deterministic transpilation from Python to Lean for Verification</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Anirudh Gupta, Petros Markopoulos e Siddhartha Gadgil</p>
+  
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">We present PastaLean, an extensible system for deterministic translation from Python to Lean via the Abstract Syntax Tree of Python.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.34205" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.34205" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">cs.LO · cs.PL</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.34723" style="color:#1b1a17;text-decoration:none;">Connecting Quantum Proof Systems and Hoare Logic</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Liyi Li, Zoukarneini Difaizi Tagba e Alex Potanin</p>
+  
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">Verifying quantum programs today requires specialized proof systems built on interactive theorem provers such as Rocq, Lean, Isabelle, or Why3, and even modest quantum algorithms cost substantial human effort to verify. We show that verifying a quantum program should be no harder than verifying a classical array program, a paradigm commonly used in parallel programming: the Qafny quantum proof system translates into Hoare logic with array theory completely (every Qafny proof becomes a valid Hoare triple) and soundly (a valid translated triple certifies only true quantum specifications), and we mechanize the completeness direction in Rocq.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.34723" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.34723" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:26px 32px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+    <td style="border-top:3px solid #1b1a17;border-bottom:1px solid #1b1a17;padding:7px 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+      font-size:12px;font-weight:bold;letter-spacing:2.5px;text-transform:uppercase;color:#1b1a17;">Também nesta edição</td>
+  </tr></table>
+</td></tr><tr><td class="p" style="padding:14px 32px 4px;">
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.34967" style="color:#1b1a17;font-weight:bold;text-decoration:none;">Rivet: Utility-Preserving Context Control for Repository-Level Coding Agents</a><br>
+    <span style="font-size:14px;color:#625c53;">In this paper, we propose Rivet, a context control framework that preserves repository evidence for coding agents under a fixed context budget.</span></p>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.35297" style="color:#1b1a17;font-weight:bold;text-decoration:none;">Testing with Coding Agents: A Large-Scale Comparison of Agent-Supported and Human-Authored Pull Requests</a><br>
+    <span style="font-size:14px;color:#625c53;">We analyze 114,134 pull requests merged between January 2025 and April 2026 in 391 Java repositories, identifying five coding agents through pull-request-level and commit-level signals.</span></p>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.34422" style="color:#1b1a17;font-weight:bold;text-decoration:none;">From GPU to TPU with Coding Agents: What Works, What Fails, and What It Costs?</a><br>
+    <span style="font-size:14px;color:#625c53;">We build a dataset of 148 PyTorch ML research projects and use Claude Code to migrate ten of them from NVIDIA GPUs to Google Cloud TPUs.</span></p>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.34847" style="color:#1b1a17;font-weight:bold;text-decoration:none;">Ethics by Configuration: AI Ethics Principles in Coding Agent Instructions</a><br>
+    <span style="font-size:14px;color:#625c53;">As AI coding agents become integral to software development, projects increasingly utilise configuration files, such as context files and skills, to govern agent behaviour.</span></p>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.34933" style="color:#1b1a17;font-weight:bold;text-decoration:none;">What Will Replace Pull Requests? Rethinking Software Collaboration for AI Agents</a><br>
+    <span style="font-size:14px;color:#625c53;">We investigate which alternatives to pull requests practitioners are proposing or adopting and what these changes mean for empirical software engineering research.</span></p>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.33958" style="color:#1b1a17;font-weight:bold;text-decoration:none;">How Do Small Coding Agents Use Code Graphs and Embeddings?</a><br>
+    <span style="font-size:14px;color:#625c53;">We release the agent, probes, logs and traces.</span></p>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.34418" style="color:#1b1a17;font-weight:bold;text-decoration:none;">MulFCoder: Framework-conditioned Multi-agent for MLLM-based Multi-framework Front-end Code Generation</a><br>
+    <span style="font-size:14px;color:#625c53;">To address this, we propose MulFCoder, a framework-conditioned multi-agent method that explicitly encodes framework constraints to bring multi-framework differences into a decidable rule space.</span></p>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.34763" style="color:#1b1a17;font-weight:bold;text-decoration:none;">The Physical Cost of Context: Quality-Constrained Resource Accounting for Coding Agents</a><br>
+    <span style="font-size:14px;color:#625c53;">Coding agents resend a growing context on every model call, and context policies are usually judged by the prompt tokens they save.</span></p></td></tr>
+<tr><td class="p" style="padding:26px 32px 24px;">
+  <div style="border-top:3px double #1b1a17;padding-top:12px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;line-height:1.6;color:#625c53;">
+    Varredura às 13:01 (horário de Brasília) no feed de anúncios do arXiv (cs.SE e cs.PL) e no Hugging Face Daily Papers.
+    Os resumos são trechos dos abstracts escritos pelos próprios autores; a frase em itálico, quando aparece,
+    é o resumo automático do Hugging Face.
+  </div>
+</td></tr>
+</table></td></tr></table>
+</body></html>
