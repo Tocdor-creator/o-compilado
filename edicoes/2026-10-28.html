@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light"><title>O Compilado nº 13 · 28/10 — Thinking-in-Bets at Test Time Reduces Sycophantic Revisions in LLM Age…</title>
+<style>@media (max-width:520px){.p{padding-left:18px!important;padding-right:18px!important}.nome{font-size:40px!important}.manchete{font-size:25px!important}}</style></head>
+<body style="margin:0;padding:0;background:#e9e2d3;">
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;">Thinking-in-Bets improves agent reliability by having models record verified claims before receiving user feedback, reducing false reversals and unnecessary edits while maintaining accuracy.</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#e9e2d3;"><tr><td align="center" style="padding:24px 10px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:660px;background:#fbf8f1;border:1px solid #d6ccb8;">
+<tr><td class="p" style="padding:18px 32px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+    <td style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#625c53;">quarta-feira, 28 de outubro de 2026</td>
+    <td align="right" style="white-space:nowrap;padding-left:12px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#625c53;">Edição nº 13</td>
+  </tr></table>
+</td></tr>
+<tr><td class="p" align="center" style="padding:10px 32px 0;">
+  <div style="border-top:4px solid #1b1a17;"></div>
+  <h1 class="nome" style="margin:14px 0 2px;font-family:Georgia,'Times New Roman',Times,serif;font-size:52px;line-height:1;font-weight:bold;letter-spacing:-1px;color:#1b1a17;">O Compilado</h1>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;font-style:italic;color:#625c53;">Os papers de programação do dia, resumidos às 8h</p>
+  <div style="border-top:1px solid #1b1a17;padding-top:3px;"><div style="border-top:1px solid #1b1a17;"></div></div>
+  <p style="margin:8px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#625c53;">
+    20 papers nesta edição &nbsp;·&nbsp; 202 analisados &nbsp;·&nbsp; arXiv + Hugging Face</p>
+</td></tr>
+
+<tr><td class="p" style="padding:22px 32px 6px;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#9b1c1c;">Manchete — 14 votos no Hugging Face</p>
+  <h1 class="manchete" style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:30px;line-height:1.15;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.34654" style="color:#1b1a17;text-decoration:none;">Thinking-in-Bets at Test Time Reduces Sycophantic Revisions in LLM Agents</a></h1>
+  <p style="margin:0 0 14px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Nghi D. Q. Bui · Google</p>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:18px;line-height:1.45;font-style:italic;color:#1b1a17;">Thinking-in-Bets improves agent reliability by having models record verified claims before receiving user feedback, reducing false reversals and unnecessary edits while maintaining accuracy.</p>
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.65;color:#1b1a17;"><span style="float:left;font-family:Georgia,'Times New Roman',Times,serif;font-size:54px;line-height:46px;padding:5px 8px 0 0;color:#1b1a17;font-weight:bold;">L</span>anguage model agents often abandon correct work when a user challenges it, yet simply telling them to stand firm makes them ignore real mistakes. Once an agent reads a complaint, it tends to discount its own earlier checks in order to agree with the user. We introduce Thinking-in-Bets, a training-free method in which an agent writes a short private record of its main claims, the checks supporting them, and its confidence before reading user feedback. When challenged, the agent consults this Claim Checklist to keep verified work intact while investigating uncertain or newly challenged parts. We evaluate five Gemini models (3.5 Flash-Lite, 3.5 Flash, 3.6 Flash, 3.8 Flash, and 4.0 Argon) across eight benchmarks: SWE-Together, SWE-Interact, and DeepSWE for software engineering, Agents&#x27; Last Exam for professional reports, Humanity&#x27;s Last Exam and SycEval for academic reasoning, Vals Finance for financial analysis, and Terminal-Bench for command-line tasks. Recording claims before criticism nearly eliminates false reversals in patch review and protects passing report drafts under mistaken pushback, whereas writing the same record after reading the complaint recovers very little of the gain. In multi-turn coding, pre-reply claim records substantially reduce unnecessary file edits after mistaken complaints, and gating the record so it is written only when the agent is uncertain lowers token overhead while fixing more real bugs than the baseline. Even in non-interactive tasks without user feedback, listing the key claims in a draft and re-checking the weakest one before submission improves both answer accuracy and confidence estimates across all tested models.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.34654" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.34654" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a> &nbsp;·&nbsp; <a href="https://huggingface.co/papers/2610.34654" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Discussão no HF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:26px 32px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+    <td style="border-top:3px solid #1b1a17;border-bottom:1px solid #1b1a17;padding:7px 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+      font-size:12px;font-weight:bold;letter-spacing:2.5px;text-transform:uppercase;color:#1b1a17;">Em alta na comunidade</td>
+  </tr></table>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;border-bottom:1px solid #d6ccb8;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">13 votos no Hugging Face</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.19025" style="color:#1b1a17;text-decoration:none;">How Far Can Coding Agents Go in Visual Generation?</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Hengguang Zhou, Yuanhao Ban, Jiaqi Feng e mais 3 · UCLA Computational Machine Learning Lab</p>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:16px;line-height:1.45;font-style:italic;color:#1b1a17;">Coding agents build images via executable programs, showing structured visual reasoning and consistent internal scene representations across drawing interfaces.</p>
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">Modern image generation largely relies on specialized generative models that leave the process of image construction implicit in learned parameters. We explore an alternative: general-purpose coding agents that construct images through executable programs. Agents excel at preserving structure and satisfying precise visual constraints, achieving competitive results in domains where compositional accuracy matters more than photorealistic appearance, while remaining limited in perceptual richness.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.19025" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.19025" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a> &nbsp;·&nbsp; <a href="https://huggingface.co/papers/2610.19025" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Discussão no HF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;border-bottom:1px solid #d6ccb8;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">11 votos no Hugging Face</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.34241" style="color:#1b1a17;text-decoration:none;">Beyond Benchmarks: Can Small Open-Weight Models Get Real Coding Work Done?</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Vaibhav Jain</p>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:16px;line-height:1.45;font-style:italic;color:#1b1a17;">Empirical studies of open-weight coding agents reveal that verified code success depends on serving setup, protocol design, and hidden behavioral checks rather than text coherence alone.</p>
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">Making an open-weight language model generate text is not the same as making it finish coding work. This retrospective empirical systems experience report follows my engineering work from July to October 2026 across coding clients, model-specific serving recipes, vLLM, SGLang, llama.cpp, and MLX. A post-hoc diagnostic found that 19 of 36 artifacts rejected only for renamed parameters passed the hidden checks unchanged; they are not counted as successes.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.34241" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.34241" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a> &nbsp;·&nbsp; <a href="https://huggingface.co/papers/2610.34241" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Discussão no HF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">9 votos no Hugging Face</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.34577" style="color:#1b1a17;text-decoration:none;">Rethinking Verification in Agent Harnesses</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Zhengxin Zhang, Erkang Zhu, Yin Lin e mais 3</p>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:16px;line-height:1.45;font-style:italic;color:#1b1a17;">Verification strategies for agent harnesses—spanning instructions, reminders, gates, and independent review—show that independent critic review improves accuracy with minimal cost increases, guiding practical test-time scaling design.</p>
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">Agent harnesses enable large language models to act through tools, observe the results, and iteratively work toward a task goal. We study verification as an axis of test-time scaling by examining when to intervene, who checks the work, and how checking leads to revision. Independent review by a critic offers a more favorable accuracy-cost tradeoff, improving average accuracy by 5.9-9.5 percentage points on TB and 3.9-6.6 on SWE at 1.13-1.25 and 1.00-1.04 times baseline cost, respectively.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.34577" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.34577" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a> &nbsp;·&nbsp; <a href="https://huggingface.co/papers/2610.34577" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Discussão no HF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:26px 32px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+    <td style="border-top:3px solid #1b1a17;border-bottom:1px solid #1b1a17;padding:7px 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+      font-size:12px;font-weight:bold;letter-spacing:2.5px;text-transform:uppercase;color:#1b1a17;">IA aplicada ao código</td>
+  </tr></table>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;border-bottom:1px solid #d6ccb8;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">cs.SE · cs.HC</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.36346" style="color:#1b1a17;text-decoration:none;">Your Wish Is My Commit: Over-Compliant Refactoring in AI Coding Agents</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Haocong Jiang, Sadra Sabouri, Sepand Haghighi e mais 1</p>
+  
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">Large language models are known to be sycophantic, over-complying with users even when doing so is unproductive. When these models act as coding agents, this can be costly: an agent that keeps editing after no edit improves the code writes churn, technical debt, and review burden into the codebase. Every model kept editing, rewriting up to 31x the original codebase before first stopping and resuming edits even after declaring the task complete.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.36346" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.36346" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;border-bottom:1px solid #d6ccb8;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">cs.SE</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.37283" style="color:#1b1a17;text-decoration:none;">BenchMeUp: Building Software Engineering Benchmarks from Natural-Language Specifications</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Islem Bouzenia e Michael Pradel</p>
+  
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">Software-engineering research relies on benchmarks that evaluate new techniques on a set of problem instances. This paper presents BenchMeUp, an approach for automatically creating software-engineering benchmarks from natural-language specifications. Evaluating eight existing techniques on the generated benchmarks, we find that 189 of 196 packaged instances (96\%) support end-to-end evaluation, allowing users to study the effectiveness of the techniques.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.37283" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.37283" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">cs.SE · cs.AI</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.36015" style="color:#1b1a17;text-decoration:none;">Do Coding Agents Still Need a Debugger? Frontier-Model-Based Fault Localization at the Accuracy Ceiling</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Christoph Daxerer, Johann Glock, Christian Macho e mais 3</p>
+  
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">Background: To localize a fault, a coding agent can reason from source code alone or use debugger assistance by running the program and stepping through it in an interactive debugger. Objective: We evaluate how accurately coding agents localize faults without tools across original and transformed programs, how much debugger assistance improves accuracy and at what cost, and how agents use it when optional. Results: Without tools, the agents localized 98.2 to 99.9% of faults in original and 96.7 to 99.9% in transformed programs, losing accuracy mainly where recipes restructured loops and conditions.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.36015" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.36015" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:26px 32px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+    <td style="border-top:3px solid #1b1a17;border-bottom:1px solid #1b1a17;padding:7px 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+      font-size:12px;font-weight:bold;letter-spacing:2.5px;text-transform:uppercase;color:#1b1a17;">Engenharia de Software</td>
+  </tr></table>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;border-bottom:1px solid #d6ccb8;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">math.HO · cs.MS · cs.SE — aceito: Jahresber. Dtsch. Math. Ver., 2026</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.36300" style="color:#1b1a17;text-decoration:none;">Building Mathematical Software -- Lessons from the Development of GAP</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Alexander Hulpke</p>
+  
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">Mathematical software has particular needs that are not all covered by the existing literature on software engineering or algorithm design. This paper looks at some of these aspects, in the concrete context of the computer algebra system GAP. It also studies the potential impact AI systems could have on the development process for mathematical software.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.36300" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.36300" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;border-bottom:1px solid #d6ccb8;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">cs.SE · quant-ph</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.36976" style="color:#1b1a17;text-decoration:none;">Toward Circuit-Aware Mutation Testing for Quantum Programs: Exact Visibility and Execution Planning</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Andriy Miranskyy e Jose Campos</p>
+  
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">Mutation testing assesses test suites by introducing program changes and checking whether tests detect them. We develop a circuit-aware framework to distinguish these causes and guide execution planning and test changes.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.36976" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.36976" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">cs.SE · cs.AI</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.36185" style="color:#1b1a17;text-decoration:none;">Can AI Guide Testing Without Generating Tests? A Comparative Study of AI-Assisted Unit Testing</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Zihan Fang, Ron Asoulin-Handelman, Helen Wu e mais 2</p>
+  
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">Recent advances in generative AI have enabled assistants to generate increasingly sophisticated executable unit tests. To investigate this, we introduce TestCompass, a generative AI tutor that provides targeted feedback on weaknesses in students&#x27; test suites without generating executable tests. We found that participants using the general-purpose AI assistant produced more tests, whereas TestCompass participants spent more time developing and verifying tests themselves.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.36185" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.36185" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:26px 32px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+    <td style="border-top:3px solid #1b1a17;border-bottom:1px solid #1b1a17;padding:7px 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+      font-size:12px;font-weight:bold;letter-spacing:2.5px;text-transform:uppercase;color:#1b1a17;">Linguagens &amp; Compiladores</td>
+  </tr></table>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;border-bottom:1px solid #d6ccb8;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">cs.AI · cs.HC · cs.PL</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.36341" style="color:#1b1a17;text-decoration:none;">Executable Archaeology of Programs That Model Programming: Reanimating the Heuristic Compiler (1961) and KBEmacs (1984)</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Jeff Shrager, Kent M. Pitman e Mia Golec</p>
+  
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">Early AI programs were often also theories of how people think, and programs that wrote programs were, in part, theories of how people program. Here we report on the reanimation of two such programs that offer two seemingly different theories of programming and were developed for quite different purposes.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.36341" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.36341" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:16px 32px;">
+  <p style="margin:0 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#625c53;">cs.PL</p>
+  <h3 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',Times,serif;font-size:20px;line-height:1.25;font-weight:bold;color:#1b1a17;">
+    <a href="https://arxiv.org/abs/2610.37244" style="color:#1b1a17;text-decoration:none;">Preserving Separation Logic Specifications through Compilation</a></h3>
+  <p style="margin:0 0 10px;font-family:Georgia,'Times New Roman',Times,serif;font-size:13px;font-style:italic;color:#625c53;">Por Carmine Abate, Kleio Liotati, Franti\v{s}ek Farka e mais 1</p>
+  
+  <p style="margin:0;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.6;color:#1b1a17;">Program specifications in separation logic describe ownership of resources and serve as logical interfaces for local reasoning. We investigate WP-preserving compilation: when a compiler translates a source program, the weakest preconditions that the program satisfies in a separation logic carry over to the compiled program.</p>
+  <p style="margin:10px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.3px;"><a href="https://arxiv.org/abs/2610.37244" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">Ler no arXiv →</a> &nbsp;·&nbsp; <a href="https://arxiv.org/pdf/2610.37244" style="color:#9b1c1c;text-decoration:none;font-weight:bold;">PDF</a></p>
+</td></tr>
+<tr><td class="p" style="padding:26px 32px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+    <td style="border-top:3px solid #1b1a17;border-bottom:1px solid #1b1a17;padding:7px 0 6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+      font-size:12px;font-weight:bold;letter-spacing:2.5px;text-transform:uppercase;color:#1b1a17;">Também nesta edição</td>
+  </tr></table>
+</td></tr><tr><td class="p" style="padding:14px 32px 4px;">
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.37434" style="color:#1b1a17;font-weight:bold;text-decoration:none;">FeatureArc: Benchmarking Coding Agents on Evolving Features</a><br>
+    <span style="font-size:14px;color:#625c53;">We introduce FeatureArc to evaluate coding agents on evolving features, together with a pipeline that constructs its tasks from repository histories.</span></p>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.35987" style="color:#1b1a17;font-weight:bold;text-decoration:none;">PROBE: Frontier Coding Agents Find Different Bugs Than Maintainers Fix</a><br>
+    <span style="font-size:14px;color:#625c53;">To close this gap, we introduce PROBE, a benchmark consisting of all 2,457 bugs fixed over the course of 18 months across 20 diverse GitHub repositories, together with a method for matching candidate…</span></p>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.36229" style="color:#1b1a17;font-weight:bold;text-decoration:none;">Agent or Human? Detecting Commits by AI Coding Agents in the Absence of Authorship Signatures</a><br>
+    <span style="font-size:14px;color:#625c53;">We investigate the signals and limits of signature-free detection using 7,837,946 commits from 1,226 repositories, covering five coding agents and Human commits.</span></p>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.36153" style="color:#1b1a17;font-weight:bold;text-decoration:none;">Stratum: Repository Memory for Coding Agents Beyond the Context Window</a><br>
+    <span style="font-size:14px;color:#625c53;">Context windows have grown a thousand-fold, yet coding agents still start every session with no memory of their past work.</span></p>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.36584" style="color:#1b1a17;font-weight:bold;text-decoration:none;">Benchmarking LLM Agents for Behaviorally Adequate Test Generation from Software Requirements</a><br>
+    <span style="font-size:14px;color:#625c53;">We introduce Req2Test-Bench, a benchmark containing 5,086 execution-validated instances recovered from developer-authored behavior-driven development (BDD) artifacts in 8 open-source projects…</span></p>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.36188" style="color:#1b1a17;font-weight:bold;text-decoration:none;">Skill Dreaming: Evolving Repository Skills through Pull Request Streams</a><br>
+    <span style="font-size:14px;color:#625c53;">To enable this co-evolution of PRs, repositories, and skills, we propose Skill Dreaming, a framework that learns from PR streams to guide continuous repository development and maintenance.</span></p>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.35971" style="color:#1b1a17;font-weight:bold;text-decoration:none;">Continue or Restart? The Limits of Early Failure Prediction in Coding Agents</a><br>
+    <span style="font-size:14px;color:#625c53;">We study the distinction in 147,002 execution traces from two public corpora spanning four model-framework settings.</span></p>
+  <p style="margin:0 0 12px;font-family:Georgia,'Times New Roman',Times,serif;font-size:15px;line-height:1.45;color:#1b1a17;">
+    <span style="color:#9b1c1c;">■</span>&nbsp; <a href="https://arxiv.org/abs/2610.35982" style="color:#1b1a17;font-weight:bold;text-decoration:none;">Generation and Verification: Human-Agent Collaboration for Safety-Critical Automotive Software Engineering</a><br>
+    <span style="font-size:14px;color:#625c53;">We present a coding assistant for automotive C/C++ that addresses both demands.</span></p></td></tr>
+<tr><td class="p" style="padding:26px 32px 24px;">
+  <div style="border-top:3px double #1b1a17;padding-top:12px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;line-height:1.6;color:#625c53;">
+    Varredura às 13:49 (horário de Brasília) no feed de anúncios do arXiv (cs.SE e cs.PL) e no Hugging Face Daily Papers.
+    Os resumos são trechos dos abstracts escritos pelos próprios autores; a frase em itálico, quando aparece,
+    é o resumo automático do Hugging Face.
+  </div>
+</td></tr>
+</table></td></tr></table>
+</body></html>
